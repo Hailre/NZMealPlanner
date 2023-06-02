@@ -6,6 +6,8 @@ html, body{
 
 * {
     box-sizing: border-box;
+    max-width: 412px;
+    max-height: 915px;
 }
 
 button, input {
@@ -17,10 +19,10 @@ button, input {
     justify-content: center;
     width: 100%;
     padding: 30px 0;
-    background-color: #EAF4F2;
+    background-color: #ffffff;
 }
 
-.device {
+.device1 {
     display: flex;
     flex-direction: column;
     width: 375px;
@@ -70,70 +72,26 @@ button, input {
     opacity: 0.4;
 }
 
-.videobox {
-    position: relative;
-    width: calc(100% - 40px);
-    height: 140px;
-    background: url(joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg) no-repeat center;
-    background-size: cover;
-    margin: 30px 20px 10px;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.videobox .wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+h1 {
+    font-size: 16px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.videobox .wrapper button.play {
-    position: relative;
-    border: 0;
-    background-color: rgba(0, 0, 0, .4);
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    margin: 0;
-    border-radius: 50%;
-    transition: all .3s ease-out;
-}
-
-.videobox .wrapper button.play:before {
-    content: '';
-    position: absolute;
-    top: 22px;
-    left: 26px;
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 14px solid #FFFFFF;
-}
-
-.videobox .wrapper button.play:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, .6);
+    margin-top: 26%;
+    margin-left: 8%;
+    margin-bottom: 0;
 }
 
 .filters{
     display: flex;
     list-style-type: none;
-    padding: 0 20px;
-    margin: 20px 0;
+    padding: 5px 20px;
     white-space: nowrap;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .filters li{
     margin-right: 15px;
-    background-color: #F3F3F3;
-    padding: 10px 20px;
+    background-color: #f4f4f4;
+    padding: 10px 20px 20px 20px;
     font-size: 14px;
     border-radius: 14px;
     color: #959595;
@@ -146,21 +104,15 @@ button, input {
 }
 
 .filters li:hover {
-    background-color: #EAEFE7;
-    color: #58987D;
-}
-
-.filters li.active {
-   background-color: #EAEFE7;
-   color: #58987D;
-   font-weight: 600;
-   cursor: default;
+    background-color: #feae65;
+    color: #000000;
 }
 
 .recipes {
     padding: 20px 20px 0;
     height: 250px;
-    overflow-y: auto;
+    overflow-y: hidden;
+    display: inline;
   }
   
   .recipe {
@@ -170,7 +122,7 @@ button, input {
     background-size: cover;
     height: 200px;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 20px;
   }
   
@@ -185,7 +137,6 @@ button, input {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
     transition: all .3s ease-out;
   }
@@ -281,4 +232,47 @@ button, input {
   
   .tabbar button.settings {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ5Ni42NTksMzEyLjEwN2wtNDcuMDYxLTM2LjhjMC41OTctNS42NzUsMS4xMDktMTIuMzA5LDEuMTA5LTE5LjMyOGMwLTcuMDE5LTAuNDkxLTEzLjY1My0xLjEwOS0xOS4zMjhsNDcuMTA0LTM2LjgyMSAgICBjOC43NDctNi45MTIsMTEuMTM2LTE5LjE3OSw1LjU2OC0yOS4zOTdMNDUzLjMzMSw4NS43NmMtNS4yMjctOS41NTctMTYuNjgzLTE0LjQ2NC0yOC4zMDktMTAuMTc2bC01NS41MzEsMjIuMjkzICAgIGMtMTAuNjQ1LTcuNjgtMjEuODAzLTE0LjE2NS0zMy4zNDQtMTkuMzQ5bC04LjQ0OC01OC45MDFDMzI2LjMxMiw4LjQ0OCwzMTYuNTg0LDAsMzA1LjA4NiwwaC05OC4xMzMgICAgYy0xMS40OTksMC0yMS4yMDUsOC40NDgtMjIuNTcxLDE5LjQ1NmwtOC40NjksNTkuMTE1Yy0xMS4xNzksNS4wMzUtMjIuMTY1LDExLjQzNS0zMy4yOCwxOS4zNDlsLTU1LjY4LTIyLjM1NyAgICBDNzYuNTIsNzEuNTMxLDY0LjA0LDc2LjA1Myw1OC44NTYsODUuNTY4TDkuODU0LDE3MC4zNDdjLTUuNzgxLDkuNzcxLTMuMzkyLDIyLjQ2NCw1LjU0NywyOS41NDdsNDcuMDYxLDM2LjggICAgYy0wLjc0Nyw3LjE4OS0xLjEwOSwxMy40NC0xLjEwOSwxOS4zMDdzMC4zNjMsMTIuMTE3LDEuMTA5LDE5LjMyOGwtNDcuMTA0LDM2LjgyMWMtOC43NDcsNi45MzMtMTEuMTE1LDE5LjItNS41NDcsMjkuMzk3ICAgIGw0OC45MzksODQuNjcyYzUuMjI3LDkuNTM2LDE2LjU3NiwxNC40ODUsMjguMzA5LDEwLjE3Nmw1NS41MzEtMjIuMjkzYzEwLjYyNCw3LjY1OSwyMS43ODEsMTQuMTQ0LDMzLjMyMywxOS4zNDlsOC40NDgsNTguODggICAgQzE4NS43NDcsNTAzLjU1MiwxOTUuNDU0LDUxMiwyMDYuOTc0LDUxMmg5OC4xMzNjMTEuNDk5LDAsMjEuMjI3LTguNDQ4LDIyLjU5Mi0xOS40NTZsOC40NjktNTkuMDkzICAgIGMxMS4xNzktNS4wNTYsMjIuMTQ0LTExLjQzNSwzMy4yOC0xOS4zNzFsNTUuNjgsMjIuMzU3YzIuNjg4LDEuMDQ1LDUuNDgzLDEuNTc5LDguMzYzLDEuNTc5YzguMjc3LDAsMTUuODkzLTQuNTIzLDE5LjczMy0xMS41NjMgICAgbDQ5LjE1Mi04NS4xMkM1MDcuODM4LDMzMS4zNDksNTA1LjQ0OCwzMTkuMDgzLDQ5Ni42NTksMzEyLjEwN3ogTTI1Ni4wMTksMzQxLjMzM2MtNDcuMDYxLDAtODUuMzMzLTM4LjI3Mi04NS4zMzMtODUuMzMzICAgIHMzOC4yNzItODUuMzMzLDg1LjMzMy04NS4zMzNzODUuMzMzLDM4LjI3Miw4NS4zMzMsODUuMzMzUzMwMy4wOCwzNDEuMzMzLDI1Ni4wMTksMzQxLjMzM3oiIGZpbGw9IiNjNmM2YzYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+);
+  }
+  /*///////////////////////////////////  GROCERY LIST  ///////////////////////////////////*/
+
+  .container1 {
+    position: rerlative;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 85px auto 0;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container .input-field {
+    position: relative;
+    height: 64px;
+    width: 100%;
+  }
+  .input-field textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 18px 45px 18px 15px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+
+  textarea::-webkit-scrollbar {
+    display: none;
+  }
+
+  .input-field .note-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: nne;
+    font-size: 24px;
+    color: #707070;
   }

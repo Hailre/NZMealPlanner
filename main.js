@@ -44,17 +44,18 @@ const ele = document.getElementById('recipes');
 
 ///////////////////////////////////////////////////////////  Filters Scroll (Right and Left)  /////////////////////////////////////////////////////////////////
 
-
+function codeAddress() {
+    window.onload = codeAddress;
 const ele2 = document.getElementById('filters');
     ele2.style.cursor = 'grab';
 
-    let pos2 = { top: 0, left: 0, x: 0, y: 0 };
+    let pos = { top: 0, left: 0, x: 0, y: 0 };
 
     const mouseDownHandler2 = function (e) {
         ele2.style.cursor = 'grabbing';
         ele2.style.userSelect = 'none';
 
-        pos2 = {
+        pos = {
             left: ele2.scrollLeft,
             top: ele2.scrollTop,
             // Get the current mouse position
@@ -84,3 +85,6 @@ const ele2 = document.getElementById('filters');
 
     // Attach the handler
     ele2.addEventListener('mousedown', mouseDownHandler2);
+}
+
+window.onload = codeAddress;

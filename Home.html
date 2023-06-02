@@ -1,13 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetmain.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
 
 <div class="container">
-    <div class="device">
+    <div class="device1">
         <div class="header">
            <div class="left-side">
             <h1>Hello,
@@ -17,18 +20,14 @@
         <div class="searchbox">
             <input type="search" placeholder="Search by recipes"/>
         </div>
-        <div class="videobox">
-            <div class="wrapper">
-                <button type="button" class="play"></button>
-            </div>
-        </div>
-
-        <ul id="filters" class="filters">
-            <li class="active">Breakfast</li>
+        
+    <h1>Meal Plans</h1>
+    <ul id="filters" class="filters">
+            <li class="click">Breakfast</li>
             <li>Lunch</li>
             <li>Dinner</li>
             <li>Snacks</li>
-        </ul>
+    </ul>
            
     <div id="recipes" class="recipes">
         <div class="recipe first">
@@ -59,10 +58,10 @@
       </div>
       
       <div class="tabbar">
-        <button type="button" class="home active">Home</button>
-        <button type="button" class="lists">Lists</button>
+        <button type="button" class="home active">
+            <a href="grocery.html">Home</a></button>
+        <button type="button" class="lists" >Lists</button>
         <button type="button" class="meal">Meal plan</button>
-        <button type="button" class="settings">Settings</button>
       </div>
     </div>
 </div>
