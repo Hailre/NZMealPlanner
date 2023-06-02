@@ -130,10 +130,6 @@ button, input {
     overflow: auto;
 }
 
-.filters::-webkit-scrollbar{
-    width: 0;
-}
-
 .filters li{
     margin-right: 15px;
     background-color: #F3F3F3;
@@ -174,8 +170,7 @@ button, input {
     background-size: cover;
     height: 200px;
     position: relative;
-    overflow: hidden;
-    cursor: pointer;
+    overflow: auto;
     margin-bottom: 20px;
   }
   
