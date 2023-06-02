@@ -3,24 +3,67 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
 
 <div class="container">
     <div class="device">
         <div class="header">
            <div class="left-side">
-            <h1>Hello, Mark 👋</h1>
-            <span>What do you want to cook today?"</span>
+            <h1>Hello,
+                <br>Planner</h1>
            </div> 
-           <div class="avatar"></div>
         </div>
         <div class="searchbox">
             <input type="search" placeholder="Search by recipes"/>
         </div>
         <div class="videobox">
-            <button type="button" class="play"></button>
+            <div class="wrapper">
+                <button type="button" class="play"></button>
+            </div>
         </div>
+
+        <ul class="filters">
+            <li class="active">Breakfast</li>
+            <li>Lunch</li>
+            <li>Dinner</li>
+            <li>Snacks</li>
+        </ul>
+           
+    <div class="recipes">
+        <div class="recipe first">
+          <div class="wrapper">
+            <div class="recipe-header">
+              <span>Mary Smith</span>
+              <div class="rating">4.8</div>
+            </div>
+            <div class="recipe-info">
+              <span>Salad with eggs and tomates</span>
+              <div class="time">15 min</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="recipe second">
+          <div class="wrapper">
+            <div class="recipe-header">
+              <span>Mary Smith</span>
+              <div class="rating">4.7</div>
+            </div>
+            <div class="recipe-info">
+              <span>Tuna Tataki dish</span>
+              <div class="time">30 min</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tabbar">
+        <button type="button" class="home active">Home</button>
+        <button type="button" class="lists">Lists</button>
+        <button type="button" class="meal">Meal plan</button>
+        <button type="button" class="settings">Settings</button>
+      </div>
     </div>
 </div>
 </html>
