@@ -1,15 +1,14 @@
-//Getting all required elements
 const inputField = document.querySelector(".input-field textarea"),
   groceryLists = document.querySelector(".groceryLists"),
   pendingNum = document.querySelector(".pending-num"),
   clearButton = document.querySelector(".clear-button");
 
-//we will call this function while adding, deleting and checking-unchecking the task
-function allTasks() {
-  let tasks = document.querySelectorAll(".pending");
+//Calls the  function while adding, deleting and checking-unchecking the task
+function allGroceries() {
+  let groceries = document.querySelectorAll(".pending");
 
-  //if tasks' length is 0 then pending num text content will be no, if not then pending num value will be task's length
-  pendingNum.textContent = tasks.length === 0 ? "no" : tasks.length;
+  //If the grocery list's length is 0 then text content will be "no", if not then the value will be task's length
+  pendingNum.textContent = groceries.length === 0 ? "no" : groceries.length;
 
   let allLists = document.querySelectorAll(".list");
   if (allLists.length > 0) {
@@ -33,28 +32,28 @@ inputField.addEventListener("keyup", (e) => {
           <i class="uil uil-trash" onclick="deleteTask(this)"></i>
         </li>`;
 
-    groceryLists.insertAdjacentHTML("beforeend", liTag); //inserting li tag inside the todolist div
+    groceryLists.insertAdjacentHTML("beforeend", liTag); 
     inputField.value = ""; //removing value from input field
-    allTasks();
+    allGroceries();
   }
 });
 
-//checking and unchecking the chekbox while we click on the task
+//checking and unchecking the checkbox while we click on the task
 function handleStatus(e) {
-  const checkbox = e.querySelector("input"); //getting checkbox
+  const checkbox = e.querySelector("input");
   checkbox.checked = checkbox.checked ? false : true;
   e.classList.toggle("pending");
-  allTasks();
+  allGroceries();
 }
 
 //deleting task while we click on the delete icon.
 function deleteTask(e) {
-  e.parentElement.remove(); //getting parent element and remove it
-  allTasks();
+  e.parentElement.remove(); 
+  allGroceries();
 }
 
-//deleting all the tasks while we click on the clear button.
+//deleting all the groceries when the clear button is clicked.
 clearButton.addEventListener("click", () => {
   groceryLists.innerHTML = "";
-  allTasks();
+  allGroceries();
 });
