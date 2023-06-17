@@ -296,8 +296,7 @@ h1 {
     color: #71ae25;
   }
   .container .groceryLists {
-    max-height: 380px;
-    margin-top: 20px;
+    max-height: 310px;
     padding-left: 0;
     overflow-y: auto;
     padding-right: 10px;
