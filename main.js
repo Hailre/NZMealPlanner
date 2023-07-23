@@ -1,90 +1,42 @@
-//Recipe Scroll (Up and Down)
-
-const ele = document.getElementById('recipes');
-    ele.style.cursor = 'grab';
-
-    let pos = { top: 0, left: 0, x: 0, y: 0 };
-
-    const mouseDownHandler = function (e) {
-        ele.style.cursor = 'grabbing';
-        ele.style.userSelect = 'none';
-
-        pos = {
-            left: ele.scrollLeft,
-            top: ele.scrollTop,
-            // Get the current mouse position
-            x: e.clientX,
-            y: e.clientY,
-        };
-
-        document.addEventListener('mousemove', mouseMoveHandler);
-        document.addEventListener('mouseup', mouseUpHandler);
-    };
-
-    const mouseMoveHandler = function (e) {
-        // How far the mouse has been moved
-        const dx = e.clientX - pos.x;
-        const dy = e.clientY - pos.y;
-
-        // Scroll the element
-        ele.scrollTop = pos.top - dy;
-        ele.scrollLeft = pos.left - dx;
-    };
-
-    const mouseUpHandler = function () {
-        ele.style.cursor = 'grab';
-        ele.style.removeProperty('user-select');
-
-        document.removeEventListener('mousemove', mouseMoveHandler);
-        document.removeEventListener('mouseup', mouseUpHandler);
-    };
-
-    // Attach the handler
-    ele.addEventListener('mousedown', mouseDownHandler);
-
-///////////////////////////////////////////////////////////  Filters Scroll (Right and Left)  /////////////////////////////////////////////////////////////////
-
-function codeAddress() {
-    window.onload = codeAddress;
-const ele2 = document.getElementById('filters');
-    ele2.style.cursor = 'grab';
-
-    let pos = { top: 0, left: 0, x: 0, y: 0 };
-
-    const mouseDownHandler2 = function (e) {
-        ele2.style.cursor = 'grabbing';
-        ele2.style.userSelect = 'none';
-
-        pos = {
-            left: ele2.scrollLeft,
-            top: ele2.scrollTop,
-            // Get the current mouse position
-            x: e.clientX,
-            y: e.clientY,
-        };
-
-        document.addEventListener('mousemove', mouseMoveHandler2);
-        document.addEventListener('mouseup', mouseUpHandler2);
-    };
-
-    const mouseMoveHandler2 = function (e) {
-        // How far the mouse has been moved
-        const dx = e.clientX - pos.x;
-
-        // Scroll the element
-        ele2.scrollLeft = pos.left - dx;
-    };
-
-    const mouseUpHandler2 = function () {
-        ele2.style.cursor = 'grab';
-        ele2.style.removeProperty('user-select');
-
-        document.removeEventListener('mousemove', mouseMoveHandler2);
-        document.removeEventListener('mouseup', mouseUpHandler2);
-    };
-
-    // Attach the handler
-    ele2.addEventListener('mousedown', mouseDownHandler2);
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
 }
 
-window.onload = codeAddress;
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("filters");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}

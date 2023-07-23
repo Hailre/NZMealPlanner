@@ -13,33 +13,71 @@
     <div class="device2">
            <div class="left-side"></div> 
         <div class="searchbox">
-            <input type="search" placeholder="Search Student Meals"/>
+          <input type="search" id="searchbox" onkeyup="myFunction()" placeholder="Search for names..">
         </div>
 
-    <h2>Student Meals</h2>
-   <div id="recipes" class="studentrecipes">
-        <div class="studentrecipe first">
-            <div class="studentrecipe-header">
-              <span>Mary Smith</span>
-              <div class="studentrating">4.8</div>
-            </div>
-            <div class="studentrecipe-info">
-              <span>Asian Specialties</span>
-              <div class="studenttime">30 min</div>
-            </div>
-        </div>
-        
-        <div class="studentrecipe second">
-            <div class="studentrecipe-header">
-              <span>Viv Warren</span>
-              <div class="studentrating">4.7</div>
-            </div>
-            <div class="studentrecipe-info">
-              <span>Traditional Tacoes</span>
-              <div class="studenttime">15 min</div>
-            </div>
-          </div>
-    </div>
+        <h2>Student Meals</h2>
+        <ul id="studentrecipes" class="studentrecipes">
+          <li><div class="studentrecipe first">
+            <a href="recipe1.html">
+              <div class="studentrecipe-header">
+                <div class="studentrating">4.8</div>
+              </div>
+              <div class="studentrecipe-info">
+                <span>Classic Ramen</span>
+                <div class="studenttime">15 min</div>
+              </div>
+            </a>
+          </div></li>
+
+          <li><div class="studentrecipe second">
+            <a href="recipe1.html">
+              <div class="studentrecipe-header">
+                <div class="studentrating">4.8</div>
+              </div>
+              <div class="studentrecipe-info">
+                <span>Breakfast Toast</span>
+                <div class="studenttime">10 min</div>
+              </div>
+            </a>
+          </div></li>
+
+          <li><div class="studentrecipe third">
+            <a href="recipe1.html">
+              <div class="studentrecipe-header">
+                <div class="studentrating">4.8</div>
+              </div>
+              <div class="studentrecipe-info">
+                <span>Burgers</span>
+                <div class="studenttime">30 min</div>
+              </div>
+            </a>
+          </div></li>
+
+          <li><div class="studentrecipe fourth">
+            <a href="recipe1.html">
+              <div class="studentrecipe-header">
+                <div class="studentrating">4.8</div>
+              </div>
+              <div class="studentrecipe-info">
+                <span>Grilled Chicken</span>
+                <div class="studenttime">30 min</div>
+              </div>
+            </a>
+          </div></li>
+
+          <li><div class="studentrecipe fifth">
+            <a href="recipe1.html">
+              <div class="studentrecipe-header">
+                <div class="studentrating">4.8</div>
+              </div>
+              <div class="studentrecipe-info">
+                <span>Traditional Tacoes</span>
+                <div class="studenttime">30 min</div>
+              </div>
+            </a>
+          </div></li>
+        </ul>
 
   <div class="footer">
     <div class="tabbar">
@@ -54,8 +92,7 @@
       </a>
     </div>
   </div>
-    
   </div>
 </div>
-<script src="main.js"></script>
+<script src="studentmeals.js"></script>
 </html>

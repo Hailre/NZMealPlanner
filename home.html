@@ -22,14 +22,16 @@
         
     <h1>Meal Plans</h1>
     <ul id="filters" class="filters">
-            <li class="click">Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
-            <li>Snacks</li>
+      <li class="btn active" onclick="filterSelection('all')"> All</li>
+      <li class="btn" onclick="filterSelection('breakfast')"> Breakfast</li>
+      <li class="btn" onclick="filterSelection('lunch')"> Lunch</li>
+      <li class="btn" onclick="filterSelection('dinner')"> Dinner</li>
+      <li class="btn" onclick="filterSelection('snacks')"> Snacks</li>
     </ul>
            
     <div id="recipes" class="recipes">
-        <div class="recipe first">
+        <div class="filterDiv breakfast"><div class="recipe first">
+          <a href="recipe1.html">
           <div class="wrapper">
             <div class="recipe-header">
               <span>Mary Smith</span>
@@ -40,9 +42,10 @@
               <div class="time">30 min</div>
             </div>
           </div>
-        </div>
+        </a>
+        </div></div>
         
-        <div class="recipe second">
+        <div class="filterDiv lunch"><div class="recipe second">
           <div class="wrapper">
             <div class="recipe-header">
               <span>Viv Warren</span>
@@ -53,9 +56,9 @@
               <div class="time">15 min</div>
             </div>
           </div>
-        </div>
+        </div></div>
 
-        <div class="recipe second">
+        <div class="filterDiv lunch"><div class="recipe second">
           <div class="wrapper">
             <div class="recipe-header">
               <span>Viv Warren</span>
@@ -66,9 +69,9 @@
               <div class="time">15 min</div>
             </div>
           </div>
-        </div>
+        </div></div>
 
-        <div class="recipe second">
+        <div class="filterDiv dinner"><div class="recipe second">
           <div class="wrapper">
             <div class="recipe-header">
               <span>Viv Warren</span>
@@ -79,9 +82,9 @@
               <div class="time">15 min</div>
             </div>
           </div>
-        </div>
+        </div></div>
 
-        <div class="recipe second">
+        <div class="filterDiv dinner"><div class="recipe second">
           <div class="wrapper">
             <div class="recipe-header">
               <span>Viv Warren</span>
@@ -92,9 +95,9 @@
               <div class="time">15 min</div>
             </div>
           </div>
-        </div>
+        </div></div>
 
-        <div class="recipe second">
+        <div class="filterDiv snacks"><div class="recipe second">
           <div class="wrapper">
             <div class="recipe-header">
               <span>Viv Warren</span>
@@ -105,7 +108,7 @@
               <div class="time">15 min</div>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
       
       <div class="footer">
