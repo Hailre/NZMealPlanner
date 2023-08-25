@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetmain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+<div class="container2">
+  <div class="devicechicken">
+    <div class="header2">
+      <a class="back-btn" onclick="history.back()">
+        <img src="left-arrow.png">
+      </a>
+    </div>
+    <ul class="information">
+      <li id="information">
+        <img src="timer.png">
+        45 mins</li>
+      <li id="information">
+        <img src="multiple-users-silhouette.png">
+        Serves 4</li>
+      <li id="information">
+        <img src="dollar-symbol.png">
+        $15</li>
+      <li id="information">
+        <img src="speedometer.png">
+        Medium</li>
+    </ul>
+    
+    <h2>Grilled Chicken</h2>
+
+    <ul class="options">
+      <li><button onclick="changeTextingredients()" class="optbtn">Ingredients</button></li>
+      <li><button onclick="changeTextmethod()" class="optbtn">Method</button></li>
+      <li><button onclick="changeTextvideo()" class="optbtn">Nutrition</button></li>
+    </ul>
+    <div class=selection id="selection"><b>INGREDIENTS</b><br>
+      1 cup teriyaki sauce<br>
+      ¼ cup lemon juice<br>
+      2 teaspoons minced fresh garlic<br>
+      2 teaspoons sesame oil<br>
+      4 skinless, boneless chicken breast halves
+      <br>
+      <br></div>
+    
+    <div class="footer">
+      <div class="tabbar">
+        <a href="home.html">
+          <button type="button" class="home active"></button>
+        </a>
+        <a href="grocery.html">
+          <button type="button" class="lists"></button>
+        </a>
+        <a href="studentmeals.html">
+          <button type="button" class="meal"></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Script -->
+<script>function changeTextingredients(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>INGREDIENTS</b><br>
+      1 cup teriyaki sauce<br>
+      ¼ cup lemon juice<br>
+      2 teaspoons minced fresh garlic<br>
+      2 teaspoons sesame oil<br>
+      4 skinless, boneless chicken breast halves<br>
+      <br>`
+}
+
+function changeTextmethod(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>METHOD</b><br>
+  Whisk teriyaki sauce, lemon juice, garlic, and sesame oil together in a bowl and pour into a resealable plastic bag.<br> 
+  Add chicken, coat with marinade, squeeze out excess air, and seal the bag.<br> 
+  Marinate in the refrigerator for at least 1 hour to overnight, turning every so often.<br>
+  When ready to cook, preheat an outdoor grill for high heat and lightly oil the grate.<br>
+  Remove chicken from marinade and shake off excess. Discard remaining marinade.<br>
+  Cook chicken on the preheated grill until no longer pink in the center and the juices run clear, 6 to 8 minutes per side.<br> 
+  An instant-read thermometer inserted into the center should read at least 74 degrees C.<br>`;
+}
+
+function changeTextvideo(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `
+    <b>NUTRITION FACTS (PER SERVING)</b><br>
+    240 CALORIES<br>
+    8g FAT<br>
+    17g CARBS<br>
+    25g PROTEIN<br>
+    <br>
+    <br>`;
+}
+</script>
+</html>    

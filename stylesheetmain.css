@@ -18,7 +18,7 @@ button, input {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 30px 0;
+    padding: 5px 0;
     background-color: #ffffff;
 }
 
@@ -53,7 +53,7 @@ button, input {
 
 .left-side button {
   margin-right: 15px;
-  background-color: #f4f4f4;
+  background-color: #fff;
   border: none;
   padding: 10px 25px 10px 25px;
   font-size: 15px;
@@ -65,7 +65,7 @@ button, input {
 
 .left-side button:hover {
   background-color:#ff725e;
-  color: #f4f4f4;
+  color: #fff;
   transition: all .4s ease-out;
 }
 
@@ -134,8 +134,8 @@ h1 {
 }
 
 .filters li:hover {
-    background-color: #feae65;
-    color: #000000;
+    background-color: #ff725e;
+    color: #ffffff;
 }
 
 .recipes {
@@ -188,6 +188,30 @@ h1 {
     width: inherit;
     height: 150px;
   }
+
+  .recipe.third {
+    background-image: url(studentmeal3.png);
+    width: inherit;
+    height: 150px;
+  }
+
+  .recipe.fourth {
+    background-image: url(studentmeal4.png);
+    width: inherit;
+    height: 150px;
+  }
+
+  .recipe.fifth {
+    background-image: url(studentmeal5.png);
+    width: inherit;
+    height: 150px;
+  }
+
+  .recipe.sixth {
+    background-image: url(studentmeal6.png);
+    width: inherit;
+    height: 150px;
+  }
   
   .recipe-header {
     display: flex;
@@ -234,7 +258,7 @@ h1 {
   .tabbar {
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 25px 20px 10px 20px;
   }
   
   .tabbar button {
@@ -244,7 +268,7 @@ h1 {
     background-size: 20px;
     background-repeat: no-repeat;
     flex: 1;
-    color: #C6C6C6;
+    color: #ffffff;
     cursor: pointer;
     padding-top: 25px;
     transition: all .3s ease-out;
@@ -253,25 +277,24 @@ h1 {
   .tabbar button:hover {
     opacity: 0.8;
   }
-
-  .tabbar button.active {
-    color: #58907D;
-  }
   
   .tabbar button.home {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTUwMy44NzEwOTQgMjMxLjQzMzU5NC0yMzYuODAwNzgyLTIyNi45ODQzNzVjLTYuMTgzNTkzLTUuOTMzNTk0LTE1Ljk1NzAzMS01LjkzMzU5NC0yMi4xNDA2MjQgMGwtMjM3LjAzNTE1NyAyMjcuMjE4NzVjLTUuMDE1NjI1IDUuMDE1NjI1LTcuODk0NTMxIDExLjkyNTc4MS03Ljg5NDUzMSAxOC45ODgyODEgMCAxNC42OTkyMTkgMTEuOTY4NzUgMjYuNjY3OTY5IDI2LjY2Nzk2OSAyNi42Njc5NjloMzcuMzMyMDMxdjE5MmMwIDIzLjU3MDMxMiAxOS4wOTM3NSA0Mi42NjQwNjIgNDIuNjY3OTY5IDQyLjY2NDA2MmgyOTguNjY0MDYyYzIzLjU3NDIxOSAwIDQyLjY2Nzk2OS0xOS4wOTM3NSA0Mi42Njc5NjktNDIuNjY0MDYydi0xOTJoMzcuMzMyMDMxYzE0LjY5OTIxOSAwIDI2LjY2Nzk2OS0xMS45Njg3NSAyNi42Njc5NjktMjYuNjY3OTY5IDAtNy4wNjI1LTIuODc4OTA2LTEzLjk3MjY1Ni04LjEyODkwNi0xOS4yMjI2NTZ6bTAgMCIgZmlsbD0iIzU4OTA3ZCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=);
+    filter: brightness(2.5) saturate(0.1);
     width: 200%;
 
   }
   
   .tabbar button.lists {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDYwLjEyMyA2MC4xMjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHBhdGggZD0iTTU3LjEyNCw1MS44OTNIMTYuOTJjLTEuNjU3LDAtMy0xLjM0My0zLTNzMS4zNDMtMywzLTNoNDAuMjAzYzEuNjU3LDAsMywxLjM0MywzLDNTNTguNzgxLDUxLjg5Myw1Ny4xMjQsNTEuODkzeiIgZmlsbD0iI2M2YzZjNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPHBhdGggZD0iTTU3LjEyNCwzMy4wNjJIMTYuOTJjLTEuNjU3LDAtMy0xLjM0My0zLTNzMS4zNDMtMywzLTNoNDAuMjAzYzEuNjU3LDAsMywxLjM0MywzLDMgICBDNjAuMTI0LDMxLjcxOSw1OC43ODEsMzMuMDYyLDU3LjEyNCwzMy4wNjJ6IiBmaWxsPSIjYzZjNmM2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8cGF0aCBkPSJNNTcuMTI0LDE0LjIzMUgxNi45MmMtMS42NTcsMC0zLTEuMzQzLTMtM3MxLjM0My0zLDMtM2g0MC4yMDNjMS42NTcsMCwzLDEuMzQzLDMsM1M1OC43ODEsMTQuMjMxLDU3LjEyNCwxNC4yMzF6IiBmaWxsPSIjYzZjNmM2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8Y2lyY2xlIGN4PSI0LjAyOSIgY3k9IjExLjQ2MyIgcj0iNC4wMjkiIGZpbGw9IiNjNmM2YzYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvY2lyY2xlPgoJPGNpcmNsZSBjeD0iNC4wMjkiIGN5PSIzMC4wNjIiIHI9IjQuMDI5IiBmaWxsPSIjYzZjNmM2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L2NpcmNsZT4KCTxjaXJjbGUgY3g9IjQuMDI5IiBjeT0iNDguNjYxIiByPSI0LjAyOSIgZmlsbD0iI2M2YzZjNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9jaXJjbGU+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==);
+    filter: brightness(1.25) saturate(0.1);
     width: 200%;
 
   }
   
   .tabbar button.meal {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMC45OTIgNTEwLjk5MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMTUxLjEyMSAxMjkuMDUxYy04LjgzNyAwLTE2LTcuMTYzLTE2LTE2di05Ny4wNTFjMC04LjgzNyA3LjE2My0xNiAxNi0xNnMxNiA3LjE2MyAxNiAxNnY5Ny4wNTFjMCA4LjgzNy03LjE2MyAxNi0xNiAxNnoiIGZpbGw9IiNjNmM2YzYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zNTkuODcyIDEyOS4wNTFjLTguODM3IDAtMTYtNy4xNjMtMTYtMTZ2LTk3LjA1MWMwLTguODM3IDcuMTYzLTE2IDE2LTE2czE2IDcuMTYzIDE2IDE2djk3LjA1MWMwIDguODM3LTcuMTYzIDE2LTE2IDE2eiIgZmlsbD0iI2M2YzZjNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI0LjI2MyAyMjEuOTc1djIyMC43NjdjMCAzNy42MzQgMzAuNjE3IDY4LjI1MSA2OC4yNTEgNjguMjUxaDMyNS45NjVjMzcuNjM0IDAgNjguMjUxLTMwLjYxNyA2OC4yNTEtNjguMjUxdi0yMjAuNzY3eiIgZmlsbD0iI2M2YzZjNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTQ4Ni43MjkgMTg5Ljk3NXYtNzMuMTk4YzAtMzcuNjM0LTMwLjYxNy02OC4yNTEtNjguMjUxLTY4LjI1MWgtMTAuNjA2djY0LjUyNWMwIDI2LjQ2OC0yMS41MzIgNDgtNDggNDhzLTQ4LTIxLjUzMi00OC00OHYtNjQuNTI2aC0xMTIuNzUxdjY0LjUyNWMwIDI2LjQ2OC0yMS41MzIgNDgtNDggNDhzLTQ4LTIxLjUzMi00OC00OHYtNjQuNTI1aC0xMC42MDdjLTM3LjYzNCAwLTY4LjI1MSAzMC42MTctNjguMjUxIDY4LjI1MXY3My4xOThoNDYyLjQ2NnoiIGZpbGw9IiNjNmM2YzYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+);
+    filter: brightness(1.25) saturate(0.1);
     width: 200%;
 
   }
@@ -283,11 +306,11 @@ h1 {
 
   .footer {
     background-image: url(Footer.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     position: inherit;
-    border-radius: 30px;
+    border-radius: 0 0 30px 30px;
   }
 
   /*///////////////////////////////////  GROCERY LIST  ///////////////////////////////////*/
@@ -303,17 +326,38 @@ h1 {
     background-image: url(app_main_page.png);
     background-size: cover;
 }
-  .container1 {
-    position: relative;
-    max-width: 90%;
-    width: 100%;
-    max-height: 60%;
-    border-radius: 8px;
-    padding: 25px;
-    margin: 200px auto 0;
-    background-color: #fff;
-  }
+.container1 {
+  position: relative;
+  max-width: 90%;
+  width: 100%;
+  max-height: 60%;
+  min-height: 60%;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 130px auto 0;
+  background-color: #fff;
+}
 
+.device3 h1 {
+  font-size: 16px;
+  color: #fff;
+  margin: 20px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#myDropdown {
+  border-radius: 7px;
+  border-width: 0;
+  padding: 5px;
+}
+
+::selection {
+  color:#000;
+  background:#c7ed99 ;
+}
   .container .input-field {
     position: relative;
     height: 64px;
@@ -353,7 +397,7 @@ h1 {
     color: #71ae25;
   }
   .container .groceryLists {
-    max-height: 260px;
+    max-height: 230px;
     padding-left: 0;
     overflow-y: overlay;
     padding-right: 10px;
@@ -364,7 +408,7 @@ h1 {
     align-items: center;
     list-style: none;
     background-color: #f2f2f2;
-    padding: 20px 15px;
+    padding: 13px 15px;
     border-radius: 8px;
     margin-top: 10px;
     position: relative;
@@ -403,14 +447,19 @@ h1 {
   }
   .container .pending-groceries {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 25px;
+    justify-content: center;
   }
   .pending-groceries span {
     color: #333;
   }
-  .pending-groceries .clear-button {
+
+  .btnactions {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+  }
+  .clear-button {
     padding: 6px 12px;
     outline: none;
     border: none;
@@ -423,6 +472,22 @@ h1 {
     white-space: nowrap;
   }
   .clear-button:hover {
+    background-color: #f0835b;
+  }
+
+  .save-button {
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    background: #feae65;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .save-button:hover {
     background-color: #f0835b;
   }
   
@@ -555,6 +620,13 @@ h2 {
   height: 110px;
 }
 
+.studentrecipe.sixth {
+  background-size: cover;
+  background-image: url(meal6.png);
+  width: auto;
+  height: 110px;
+}
+
 .studentrecipe-header {
   display: flex;
   align-items: center;
@@ -600,10 +672,10 @@ h2 {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 30px 0;
+  padding: 5px 0;
   background-color: #ffffff;
 }
-.device4 {
+.devicetaco {
   display: flex;
   flex-direction: column;
   width: 375px;
@@ -613,6 +685,87 @@ h2 {
   background-image: url(recipe1tacos.png);
   background-size: cover;
 }
+.devicetaco h2{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.deviceramen {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 736px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, .1);
+  border-radius: 30px;
+  background-image: url(recipe2ramen.png);
+  background-size: cover;
+}
+
+.deviceramen h2{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.devicetoast {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 736px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, .1);
+  border-radius: 30px;
+  background-image: url(recipe3toast.png);
+  background-size: cover;
+}
+.devicetoast h2{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.deviceburger {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 736px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, .1);
+  border-radius: 30px;
+  background-image: url(recipe4burger.png);
+  background-size: cover;
+}
+.deviceburger h2{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.devicechicken {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 736px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, .1);
+  border-radius: 30px;
+  background-image: url(recipe5chicken.png);
+  background-size: cover;
+}
+.devicechicken h2{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.devicerice {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 736px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, .1);
+  border-radius: 30px;
+  background-image: url(recipe6rice.png);
+  background-size: cover;
+}
+.devicerice h2{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
 
 .header2 {
   padding: 40px 20px 20px;
@@ -628,6 +781,7 @@ h2 {
   display: flex;
   list-style-type: none;
   padding: 5px 20px;
+  margin-top: 20px;
   white-space: nowrap;
 }
 
@@ -660,7 +814,7 @@ h2 {
 }
 
 .options .optbtn {
-  margin-right: 15px;
+  margin-right: 10px;
   background-color: #ffffff;
   padding: 7px 20px 7px 20px;
   font-size: 14px;
@@ -672,7 +826,7 @@ h2 {
 }
 
 .options .optbtn:hover {
-  background-color: #feae65;
+  background-color: #ff725e;
   color: #ffff
 }
 
@@ -685,15 +839,16 @@ h2 {
   display: flex;
   list-style: none;
   flex-direction: row-reverse;
-  padding-top: 20px;
+  margin-right: 5px;
+  margin-top: 20px;
 }
 
 .selection {
   overflow: scroll;
   display: inline;
-  padding-left: 20px;
-  padding-bottom: 50%;
-  margin-bottom: 10%;
+  padding: 20px;
+  padding-top: 10px;
+  margin-bottom: 5%;
 }
 .selection::-webkit-scrollbar {
   display: none;

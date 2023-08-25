@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetmain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+<div class="container2">
+  <div class="devicerice">
+    <div class="header2">
+      <a class="back-btn" onclick="history.back()">
+        <img src="left-arrow.png">
+      </a>
+    </div>
+    <ul class="information">
+      <li id="information">
+        <img src="timer.png">
+        20 mins</li>
+      <li id="information">
+        <img src="multiple-users-silhouette.png">
+        Serves 3</li>
+      <li id="information">
+        <img src="dollar-symbol.png">
+        $10-15</li>
+      <li id="information">
+        <img src="speedometer.png">
+        Easy</li>
+    </ul>
+    
+    <h2>Egg Fried Rice</h2>
+
+    <ul class="options">
+      <li><button onclick="changeTextingredients()" class="optbtn">Ingredients</button></li>
+      <li><button onclick="changeTextmethod()" class="optbtn">Method</button></li>
+      <li><button onclick="changeTextvideo()" class="optbtn">Nutrition</button></li>
+    </ul>
+    <div class=selection id="selection"><b>INGREDIENTS</b><br>
+      1 Tbsp rice bran or vegetable oil<br> 
+      2 garlic cloves, minced<br>
+      2 cups (400g) cooked rice<br>
+      3 eggs, beaten<br>
+      2 Tbsp soy sauce<br>
+      1 Tbsp oyster sauce<br>
+      1 tsp sesame oil<br>
+      ½ cup frozen vegetables of your choice<br>
+      15g butter<br>
+      Finely sliced spring onion, if desired</div>
+    
+    <div class="footer">
+      <div class="tabbar">
+        <a href="home.html">
+          <button type="button" class="home active"></button>
+        </a>
+        <a href="grocery.html">
+          <button type="button" class="lists"></button>
+        </a>
+        <a href="studentmeals.html">
+          <button type="button" class="meal"></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Script -->
+<script>function changeTextingredients(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>INGREDIENTS</b><br>
+      1 Tbsp rice bran or vegetable oil<br> 
+      2 garlic cloves, minced<br>
+      2 cups (400g) cooked rice<br>
+      3 eggs, beaten<br>
+      2 Tbsp soy sauce<br>
+      1 Tbsp oyster sauce<br>
+      1 tsp sesame oil<br>
+      ½ cup frozen vegetables of your choice<br>
+      15g butter<br>
+      Finely sliced spring onion, if desired`
+}
+
+function changeTextmethod(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>METHOD</b><br>
+  Bring a wok or large pan to a high heat with the oil.<br>
+  Once heated, add the rice and garlic, then stir fry for 4-5 minutes.<br> 
+  Push the rice to the side of the pan, and pour the beaten egg into the empty side.<br> 
+  Stir to scramble, then stir through the rice.<br>
+  Pour the soy sauce, oyster sauce and sesame oil into the rice.<br> 
+  Stir to combine, then fold through the frozen vegetables and cook for 3-4 minutes or until cooked through.<br> 
+  Add the butter and stir until melted.<br>
+  Garnish with chopped onion then serve immediately.`;
+}
+
+function changeTextvideo(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `
+    <b>NUTRITION FACTS (PER SERVING)</b><br>
+    1009 Kcal CALORIES<br>
+    17g FAT<br>
+    167g CARBS<br>
+    27g PROTEIN<br>
+    <br>
+    <br>`;
+}
+</script>
+</html>    

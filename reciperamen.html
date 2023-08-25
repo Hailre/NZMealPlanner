@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetmain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+<div class="container2">
+  <div class="deviceramen">
+    <div class="header2">
+      <a class="back-btn" onclick="history.back()">
+        <img src="left-arrow.png">
+      </a>
+    </div>
+    <ul class="information">
+      <li id="information">
+        <img src="timer.png">
+        30 mins</li>
+      <li id="information">
+        <img src="multiple-users-silhouette.png">
+        Serves 4</li>
+      <li id="information">
+        <img src="dollar-symbol.png">
+        $10-15</li>
+      <li id="information">
+        <img src="speedometer.png">
+        Easy</li>
+    </ul>
+    
+    <h2>Ramen Bowl</h2>
+
+    <ul class="options">
+      <li><button onclick="changeTextingredients()" class="optbtn">Ingredients</button></li>
+      <li><button onclick="changeTextmethod()" class="optbtn">Method</button></li>
+      <li><button onclick="changeTextvideo()" class="optbtn">Nutrition</button></li>
+    </ul>
+    <div class=selection id="selection"><b>INGREDIENTS</b><br>
+      <b>For the broth:</b><br>
+      2 tablespoons toasted sesame oil<br>
+      4 medium scallions thinly sliced<br>
+      1 clove garlic, minced<br>
+      1 small carrot, thinly sliced<br>
+      4 ounces button, cremini, or shiitake mushrooms, thinly sliced shiitake mushrooms<br>
+      1 1/2 cups thinly shredded Napa cabbage, spinach, kale, or other greens<br>
+      1 1-inch piece fresh ginger, minced<br>
+      6 cups low-sodium chicken stock<br>
+      1 tablespoon brown sugar, optional<br>
+      Lime wedges, optional<br>
+      
+      <b>For the soup:</b><br>
+      4 large eggs<br>
+      20 ounces fresh ramen noodles, or 12 ounces dried noodles<br>
+      2 medium cooked chicken breast halves, sliced <br>
+
+      <b>For the garnish:</b><br>
+      Soy sauce<br>
+      Sriracha or other hot sauce<br>
+      Handful fresh cilantro, leaves removed from stems<br>
+      Lime wedges</div>
+    
+    <div class="footer">
+      <div class="tabbar">
+        <a href="home.html">
+          <button type="button" class="home active"></button>
+        </a>
+        <a href="grocery.html">
+          <button type="button" class="lists"></button>
+        </a>
+        <a href="studentmeals.html">
+          <button type="button" class="meal"></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Script -->
+<script>function changeTextingredients(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>INGREDIENTS</b><br>
+      <b>For the broth:</b><br>
+      2 tablespoons toasted sesame oil<br>
+      4 medium scallions thinly sliced<br>
+      1 clove garlic, minced<br>
+      1 small carrot, thinly sliced<br>
+      4 ounces button, cremini, or shiitake mushrooms, thinly sliced shiitake mushrooms<br>
+      1 1/2 cups thinly shredded Napa cabbage, spinach, kale, or other greens<br>
+      1 1-inch piece fresh ginger, minced<br>
+      6 cups low-sodium chicken stock<br>
+      1 tablespoon brown sugar, optional<br>
+      Lime wedges, optional<br>
+      <br>
+      <b>For the soup:</b><br>
+      4 large eggs<br>
+      20 ounces fresh ramen noodles, or 12 ounces dried noodles<br>
+      2 medium cooked chicken breast halves, sliced <br>
+      <br>
+      <b>For the garnish:</b><br>
+      Soy sauce<br>
+      Sriracha or other hot sauce<br>
+      Handful fresh cilantro, leaves removed from stems<br>
+      Lime wedges</div>`
+}
+
+function changeTextmethod(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>METHOD</b><br>
+  <b>Make the broth</b><br>
+  In a large saucepan over medium heat, heat the oil.<br>
+  Add the scallions, garlic, carrot, mushrooms, and cabbage.<br>
+  Cook, stirring often, for 3 minutes, or until the vegetables soften.<br>
+  Stir in the ginger and brown sugar and cook for 30 seconds.<br> 
+  Finally add the chicken broth and bring to a simmer. Simmer for 10 minutes.<br>
+  <br>
+  <b>Cook the eggs</b><br>
+  While the broth is simmering, bring a pot of water to a boil.<br> 
+  Set a bowl of cold ice water nearby.<br>
+  Use a slotted spoon to gently lower the eggs, still in the shell, into the water.<br>
+  Simmer for 7 minutes for eggs that are soft and a little runny in the center, or 9 minutes for hard-boiled eggs.<br>
+  Transfer the eggs to the bowl of cold water and set aside until ready to serve.<br>
+  <br>
+  <b>Cook the noodles</b><br>
+  Return the pot of water to a boil.<br> 
+  Add the noodles and cook for 3 minutes, or according to the package directions, until tender.<br> 
+  Drain in a colander.<br>
+  <br>
+  <b>Assemble the soup</b><br>
+  Divide the noodles among 4 large bowls.<br> 
+  Ladle the broth and vegetables over the noodles.<br>
+  Remove the eggs from the ice water.<br> 
+  Tap the shells with a spoon to crack and then peel off the shells.<br> 
+  Pat the eggs dry and cut them in half.<br>
+  Top each bowl with the egg halves and the sliced chicken.<br>
+  Serve with soy sauce, hot sauce, cilantro leaves and lime wedges.<br>`;
+}
+
+function changeTextvideo(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `
+    <b>NUTRITION FACTS (PER SERVING)</b><br>
+    749 CALORIES<br>
+    20g FAT<br>
+    95g CARBS<br>
+    51g PROTEIN<br>
+    <br>
+    <br>`;
+}
+</script>
+</html>    

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetmain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+<div class="container2">
+  <div class="devicetoast">
+    <div class="header2">
+      <a class="back-btn" onclick="history.back()">
+        <img src="left-arrow.png">
+      </a>
+    </div>
+    <ul class="information">
+      <li id="information">
+        <img src="timer.png">
+        10 mins</li>
+      <li id="information">
+        <img src="multiple-users-silhouette.png">
+        Serves 4</li>
+      <li id="information">
+        <img src="dollar-symbol.png">
+        $5-10</li>
+      <li id="information">
+        <img src="speedometer.png">
+        Easy</li>
+    </ul>
+    
+    <h2>Breakfast Toast</h2>
+
+    <ul class="options">
+      <li><button onclick="changeTextingredients()" class="optbtn">Ingredients</button></li>
+      <li><button onclick="changeTextmethod()" class="optbtn">Method</button></li>
+      <li><button onclick="changeTextvideo()" class="optbtn">Nutrition</button></li>
+    </ul>
+    <div class=selection id="selection"><b>INGREDIENTS</b><br>
+      8 Ripe vine tomatoes diced<br>
+      ½ Sourdough bread loaf<br>
+      1 clove garlic<br>
+      3 tablespoons extra-virgin olive oil<br>
+      1 handful basil leaves chopped<br>
+      Salt and freshly ground black pepper.</div>
+    
+    <div class="footer">
+      <div class="tabbar">
+        <a href="home.html">
+          <button type="button" class="home active"></button>
+        </a>
+        <a href="grocery.html">
+          <button type="button" class="lists"></button>
+        </a>
+        <a href="studentmeals.html">
+          <button type="button" class="meal"></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Script -->
+<script>function changeTextingredients(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>INGREDIENTS</b><br>
+      8 Ripe vine tomatoes diced<br>
+      ½ Sourdough bread loaf<br>
+      1 clove garlic<br>
+      3 tablespoons extra-virgin olive oil<br>
+      1 handful basil leaves chopped<br>
+      Salt and freshly ground black pepper.</div>`
+}
+
+function changeTextmethod(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>METHOD</b><br>
+  Preheat oven to 180 degrees °C<br>
+  Slice sourdough on an angle into ½ cm thick slices.<br> 
+  You should end up with 12-18 slices.<br> 
+  Brush with olive oil and lay on a baking tray.<br> 
+  Bake for 15 minutes or until golden and crispy.<br> 
+  Cut garlic clove in half and lightly rub raw garlic over bruschetta.<br>
+  Place diced tomatoes in a bowl and season with salt, cover and set aside in the fridge for 10 minutes.<br> 
+  The salt will draw out some excess liquid from the tomatoes.<br>
+  Drain excess liquid from the tomatoes and mix in extra virgin olive oil and basil.<br> 
+  Season with salt and pepper to taste.<br>
+  Serve bruschetta with the tomatoes and a spoon to allow people to serve themselves.<br>`;
+}
+
+function changeTextvideo(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `
+    <b>NUTRITION FACTS (PER SERVING)</b><br>
+    185 CALORIES<br>
+    12g FAT<br>
+    15g	CARBS<br>
+    4g PROTEIN<br>
+    <br>
+    <br>`;
+}
+</script>
+</html>    

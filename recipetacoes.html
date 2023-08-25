@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheetmain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+<div class="container2">
+  <div class="devicetaco">
+    <div class="header2">
+      <a class="back-btn" onclick="history.back()">
+        <img src="left-arrow.png">
+      </a>
+    </div>
+    <ul class="information">
+      <li id="information">
+        <img src="timer.png">
+        30 mins</li>
+      <li id="information">
+        <img src="multiple-users-silhouette.png">
+        Serves 4</li>
+      <li id="information">
+        <img src="dollar-symbol.png">
+        $10-15</li>
+      <li id="information">
+        <img src="speedometer.png">
+        Easy</li>
+    </ul>
+    
+    <h2>Traditional Tacoes</h2>
+
+    <ul class="options">
+      <li><button onclick="changeTextingredients()" class="optbtn">Ingredients</button></li>
+      <li><button onclick="changeTextmethod()" class="optbtn">Method</button></li>
+      <li><button onclick="changeTextvideo()" class="optbtn">Nutrition</button></li>
+    </ul>
+    <div class=selection id="selection"><b>INGREDIENTS</b><br>
+      1 onion<br>
+      1 red pepper<br>
+      1 green pepper<br>
+      olive oil<br>
+      2 cloves of garlic<br>
+      1 pinch of paprika<br>
+      1½ teaspoons cumin<br>
+      500 g quality minced beef<br>
+      250 ml organic beef stock<br>
+      12 corn taco shells<br>
+      SALSA<br>
+      2 ripe tomatoes<br>
+      1 spring onion<br>
+      3 sprigs of fresh coriander<br>
+      ½ a lime<br>
+      GUACAMOLE<br>
+      2 ripe avocados<br>
+      ½ lime<br>
+      2 tablespoons crème fraîche</div>
+    
+    <div class="footer">
+      <div class="tabbar">
+        <a href="home.html">
+          <button type="button" class="home active"></button>
+        </a>
+        <a href="grocery.html">
+          <button type="button" class="lists"></button>
+        </a>
+        <a href="studentmeals.html">
+          <button type="button" class="meal"></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Script -->
+<script>function changeTextingredients(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>INGREDIENTS</b><br>
+  1 onion<br>
+  1 red pepper<br>
+  1 green pepper<br>
+  olive oil<br>
+  2 cloves of garlic<br>
+  1 pinch of paprika<br>
+  1½ teaspoons cumin<br>
+  500 g quality minced beef<br>
+  250 ml organic beef stock<br>
+  12 corn taco shells<br>
+  SALSA<br>
+  2 ripe tomatoes<br>
+  1 spring onion<br>
+  3 sprigs of fresh coriander<br>
+  ½ a lime<br>
+  GUACAMOLE<br>
+  2 ripe avocados<br>
+  ½ lime<br>
+  2 tablespoons crème fraîche<br>`
+}
+
+function changeTextmethod(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `<b>METHOD</b><br>
+  Peel and dice the onion, then deseed and dice the peppers.<br> 
+  Soften in 1 tablespoon of oil in a large pan over a low heat.<br>
+  Peel, finely slice and add the garlic, along with the paprika and cumin, and cook for 1 to 2 minutes.<br> 
+  Add the beef and stir until it has browned.<br>
+  Pour in the stock, cover, and cook for 45 minutes, or until reduced and delicious.<br>
+  Preheat the oven to 180ºC/350ºF/gas 4.<br>
+  For the salsa, roughly chop the tomatoes, trim and finely slice the spring onion, then pick and roughly chop the coriander leaves.<br> 
+  Combine with the lime juice, then season carefully to taste.<br>
+  For the guacamole, halve and destone the avocados, then mash the flesh with a fork.<br> 
+  Squeeze in the lime juice, add the crème fraîche, season, and gently mix it all up.<br>
+  Spread the taco shells out on a baking tray and place in the oven for 3 to 4 minutes until crisp.<br>
+  Fill the shells with the meat, salsa and guacamole or lay everything out and let everyone help themselves.`;
+}
+
+function changeTextvideo(){
+  var element = document.getElementById("selection");
+  element.innerHTML = `
+    <b>NUTRITION FACTS (PER SERVING)</b><br>
+    749 CALORIES<br>
+    20g FAT<br>
+    95g CARBS<br>
+    51g PROTEIN<br>
+    <br>
+    <br>`;
+}
+</script>
+</html>    

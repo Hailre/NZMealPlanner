@@ -7,27 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-  />
-    </head>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+  </head>
 
 <div class="container">
   <div class="device3">
+    <h1>Recommended Grocery Lists
+      <select id="myDropdown" onchange="changeFunc(), burgerIngredients(),chickenIngredients(),ramenIngredients(),riceIngredients(),tacoIngredients(),toastIngredients()">
+        <option value="" disabled selected>Select Existing List</option>
+        <option id="ClassBurg" value="Classic Burgers">Classic Burgers</option>
+        <option id="GrillChick" value="Grilled Chicken">Grilled Chicken</option>
+        <option id="RamenBowl" value="Ramen Bowl">Ramen Bowl</option>
+        <option id="FriedRice" value="Egg Fried Rice">Egg Fried Rice</option>
+        <option id="TradTacoes"value="Traditional Tacoes">Traditional Tacoes</option>
+        <option id="BreakToast" value="Breakfast Toast">Breakfast Toast</option>
+      </select>
+    </h1>     
+      
     <div class="container1">
-            <div class="input-field">
-                <textarea placeholder="Add Groceries"></textarea>
-                <i class="uil uil-notes note-icon"></i>
-            </div>
-            <ul class="groceryLists"></ul>
-
-      <div class="pending-groceries">
-        <span
-          >You have <span class="pending-num"> no </span> Groceries remaining.</span>
-        <button class="clear-button">Clear All</button>
-      </div>
-    </div>
+        <div class="input-field">
+          <textarea placeholder="Add Groceries" maxlength="30"></textarea>
+          <i class="uil uil-notes note-icon"></i>
+        </div>
+        <ul value="text/plain" class="groceryLists"></ul>
+        <div class="pending-groceries">
+          <span>You have <span class="pending-num"> no </span> Groceries remaining.</span>
+        </div>
+        <div class="btnactions">
+          <button class="save-button">Save List</button>
+          <button class="clear-button">Clear All</button>
+        </div>
+  </div>
     <div class="footer">
       <div class="tabbar">
         <a href="home.html">
@@ -43,5 +53,6 @@
     </div>  
   </div>  
 </div>
+
 <script src="grocerylist.js"></script>
 </html>  
