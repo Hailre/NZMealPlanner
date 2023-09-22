@@ -45,7 +45,8 @@ function allGroceries() {
 
 //add task while we put value in text area and press enter
 inputField.addEventListener("keyup", (e) => {
-  let inputVal = inputField.value.trim();
+  let inputVal = inputField.value.trim().charAt(0).toUpperCase() +
+  inputField.value.slice(1);
 
   //if enter button is clicked and inputed value length is greated than 0.
   if (e.key === "Enter" && inputVal.length > 0) {
@@ -95,9 +96,8 @@ function changeFunc() {
 
 function burgerIngredients() {
   var selectedValue=changeFunc()
-  if (selectedValue === "Classic Burgers") {
+  if (selectedValue === "Classic Burgers" & confirm("Add Ingredients to Current Recipe List?") == true) {
     const burgerTextContent = ["Olive Oil", "Onion", "Beef Steak Mince", "Eggs", "Cheddar", "Bread Rolls", "Lettuce", "Tomato"];
-    groceryLists.innerHTML = "";
     for (i in burgerTextContent) {
     let liTag = ` <li class="list pending" onclick="handleStatus(this)">
     <input type="checkbox" />
@@ -106,6 +106,7 @@ function burgerIngredients() {
     </li>`
     groceryLists.insertAdjacentHTML("beforeend", liTag);
     }
+    
     allGroceries()
   }
 }
@@ -114,7 +115,6 @@ function chickenIngredients() {
   var selectedValue=changeFunc()
   if (selectedValue === "Grilled Chicken") {
     const chickenTextContent = ["Teriyaki Sauce", "Lemons", "Fresh Garlic", "Sesame Oil", "Boneless Chicken Breast"];
-    groceryLists.innerHTML = "";
     for (i in chickenTextContent) {
     let liTag = ` <li class="list pending" onclick="handleStatus(this)">
     <input type="checkbox" />
@@ -123,6 +123,7 @@ function chickenIngredients() {
     </li>`
     groceryLists.insertAdjacentHTML("beforeend", liTag);
     }
+    let uniqueGroceries = [...new Set(groceryLists.innerHTML)];
     allGroceries()
   }
 }
@@ -131,7 +132,6 @@ function ramenIngredients() {
   var selectedValue=changeFunc()
   if (selectedValue === "Ramen Bowl") {
     const ramenTextContent = ["Sesame Oil", "Spring Onion", "Fresh Garlic", "Carrots", "Shiitake Mushrooms", "Cabbage", "Spinach", "Fresh Ginger", "Chicken Stock", "Eggs", "Ramen Noodles", "Chicken Breast", "Soy Sauce"];
-    groceryLists.innerHTML = "";
     for (i in ramenTextContent) {
     let liTag = ` <li class="list pending" onclick="handleStatus(this)">
     <input type="checkbox" />
@@ -140,6 +140,7 @@ function ramenIngredients() {
     </li>`
     groceryLists.insertAdjacentHTML("beforeend", liTag);
     }
+    let uniqueGroceries = [...new Set(groceryLists.innerHTML)];
     allGroceries()
   }
 }
@@ -148,7 +149,6 @@ function riceIngredients() {
   var selectedValue=changeFunc()
   if (selectedValue === "Egg Fried Rice") {
     const riceTextContent = ["Vegetable Oil", "Fresh Garlic", "White Rice", "Eggs", "Soy Sauce", "Oyster Sauce", "Sesame Oil", "Frozen Vegetables", "Butter", "Spring Onion"];
-    groceryLists.innerHTML = "";
     for (i in riceTextContent) {
     let liTag = ` <li class="list pending" onclick="handleStatus(this)">
     <input type="checkbox" />
@@ -157,6 +157,7 @@ function riceIngredients() {
     </li>`
     groceryLists.insertAdjacentHTML("beforeend", liTag);
     }
+    let uniqueGroceries = [...new Set(groceryLists.innerHTML)];
     allGroceries()
   }
 }
@@ -165,7 +166,6 @@ function tacoIngredients() {
   var selectedValue=changeFunc()
   if (selectedValue === "Traditional Tacoes") {
     const riceTextContent = ["Onion", "Peppers", "Olive Oil", "Fresh Garlic", "Paprika", "Cumin", "Minced Beef", "Beef Stock", "Taco Shells", "Tomatoes", "Coriander", "Avocados", "Lime"];
-    groceryLists.innerHTML = "";
     for (i in riceTextContent) {
     let liTag = ` <li class="list pending" onclick="handleStatus(this)">
     <input type="checkbox" />
@@ -174,6 +174,7 @@ function tacoIngredients() {
     </li>`
     groceryLists.insertAdjacentHTML("beforeend", liTag);
     }
+    let uniqueGroceries = [...new Set(groceryLists.innerHTML)];
     allGroceries()
   }
 }
@@ -182,7 +183,6 @@ function toastIngredients() {
   var selectedValue=changeFunc()
   if (selectedValue === "Breakfast Toast") {
     const riceTextContent = ["Tomatoes", "Sourdough Bread", "Fresh Garlic", "Olive Oil", "Basil", "Black Pepper"];
-    groceryLists.innerHTML = "";
     for (i in riceTextContent) {
     let liTag = ` <li class="list pending" onclick="handleStatus(this)">
     <input type="checkbox" />
@@ -191,6 +191,7 @@ function toastIngredients() {
     </li>`
     groceryLists.insertAdjacentHTML("beforeend", liTag);
     }
+    let uniqueGroceries = [...new Set(groceryLists.innerHTML)];
     allGroceries()
   }
 }

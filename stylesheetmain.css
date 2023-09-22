@@ -349,9 +349,12 @@ h1 {
 }
 
 #myDropdown {
-  border-radius: 7px;
-  border-width: 0;
+  border-radius: 8px;
+  border-width: 2px;
   padding: 5px;
+  background-color: transparent;
+  border-color: #f7b67a;
+  color: #f4f4f4;
 }
 
 ::selection {
@@ -367,13 +370,15 @@ h1 {
     height: 100%;
     width: 100%;
     outline: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     border-radius: 8px;
-    padding: 18px 45px 18px 15px;
+    padding: 22px 45px 18px 15px;
     border: 1px solid #ccc;
     resize: none;
   }
+
+
 
   .input-field textarea:focus {
     border-color: #71ae25;
@@ -408,7 +413,7 @@ h1 {
     align-items: center;
     list-style: none;
     background-color: #f2f2f2;
-    padding: 13px 15px;
+    padding: 5px 5px;
     border-radius: 8px;
     margin-top: 10px;
     position: relative;
@@ -852,4 +857,138 @@ h2 {
 }
 .selection::-webkit-scrollbar {
   display: none;
+}
+
+/*///////////////////////////////////  PLANNER  ///////////////////////////////////*/
+#task-form {
+  display: flex;
+  width: 100%;
+  padding: 60% 20px 10px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#task-input {
+  flex: 1 1 0%;
+  padding: 0.75rem 0.5rem;
+  background-color: var(--dark-green);
+  color: var(--light);
+  border: 1px solid var(--grey);
+  border-radius: 0.5rem;
+}
+
+#task-input::placeholder {
+  color: var(--grey);
+}
+
+#task-submit {
+  color: var(--light);
+  font-weight: 600;
+  border: 1px solid var(--grey);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#task-submit:hover {
+  opacity: 0.8;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem 0;
+}
+
+.task-list h2 {
+  font-weight: 400;
+  letter-spacing: normal;
+  margin-bottom: 0.5rem;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#tasks .task {
+  margin: 0.5rem 0;
+  padding: 20px 10px 20px 30px;
+  background-color: var(--dark-green);
+  border-radius: 0.5rem;
+}
+
+.task .content {
+  flex: auto;
+  white-space: normal
+}
+
+.task .content .text {
+  color: var(--light);
+  padding-top: 0.5rem;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+  border-bottom: 1px solid var(--grey);
+  color: var(--grey);
+}
+
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.2rem;
+}
+
+.task button {
+  background-color: var(--orange);
+  color: var(--light);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 0.25rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.task button:hover {
+  opacity: 0.8;
+}
+
+.task .actions {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task .actions button {
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.task .actions .edit, .download {
+  border: 1px solid var(--light);
+}
+
+.task .actions .delete {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.actions button:hover {
+  opacity: 0.8;
 }

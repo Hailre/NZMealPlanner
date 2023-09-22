@@ -16,4 +16,7 @@ function myFunction() {
       li[i].style.display = "none";
     }
   }
+  if (txtValue.toUpperCase().indexOf(filter) != filter){
+    alert("Sorry, we do not have this recipe yet \n Ensure your Recipe is spelt correctly and try again, or email reeceh@stu.otc.school.nz to make a suggestion")
+  }
 }
