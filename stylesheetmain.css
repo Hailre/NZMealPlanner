@@ -538,6 +538,23 @@ h1 {
   display: block; /* Make it into a block element to fill the whole list */
 }
 
+.search-results {
+  height: 48vh;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+.search-results a {
+  margin: 0;
+}
+
+.search-results p {
+  margin: 20px 20px;
+  font-size: 13px;
+}
+
 h2 {
   font-size: 16px;
   display: flex;
